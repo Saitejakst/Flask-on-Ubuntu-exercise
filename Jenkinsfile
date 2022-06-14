@@ -9,7 +9,7 @@ pipeline {
 	   }
 	   stage('Build Image') {
 	        steps {
-	        sh 'sudo docker build -S -t mynlpmodel:v1 .'
+	        sh 'sudo docker build -t mynlpmodel:v1 .'
 	        }
 	   }
 	   stage('Run Image') {
