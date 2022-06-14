@@ -14,7 +14,7 @@ pipeline {
 	   }
 	   stage('Run Image') {
 	        steps {
-	        sh 'sudo docker run -d -p 5000:4000 --name nlpmodel mynlpmodel:v2'
+	        sh 'sudo docker run -d -p 5000:4000 --name nlpmodel2 mynlpmodel:v2'
 	        }
 	   }
 	   stage('Testing'){
